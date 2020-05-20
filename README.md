@@ -14,9 +14,9 @@ Installation:
 	
 Available commands:
 
-help - display help msg
-add - add task
-get - display tasks
-update - update task
-delete - delete task
-exit - exit the program 
+help - display help msg <br>
+add - add task <br>
+get - display tasks <br>
+update - update task <br>
+delete - delete task <br>
+exit - exit the program <br>
