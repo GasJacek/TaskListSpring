@@ -3,7 +3,7 @@ A simple Spring-based task list with H2 database. <br>
 
 Installation:<br>
 
-1. Clone project to IDE.:<br>
+1. Clone project to IDE.<br>
 
 2. Package jar with Maven. :<br>
 
