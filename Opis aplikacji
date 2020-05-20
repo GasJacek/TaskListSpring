@@ -1,0 +1,13 @@
+1. Opis aplikacji:
+
+Aplikacja pozwala na dodawanie, wyświetlanie, modyfikowanie i usuwanie zadań z listy zadań.
+Obsługa aplikacji odbywa się poprzez wiersz poleceń. Aplikacja przechowuje dane w bazie danych.
+
+2. Funkcjonalności:
+
+Dodanie zadania, modyfikacja zadania, usunięcie zadania, wyświetlenie zadania, wyświetlenie wszystkich zadań.
+
+3. Użyte biblioteki:
+
+Spring-boot, lombok, picocli, junit, mockito, h2database
+
