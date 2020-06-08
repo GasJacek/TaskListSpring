@@ -1,72 +1,42 @@
 package com.task.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Task {
-	
-	@javax.persistence.Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
-	
-	@Column(name = "task_number", unique = true, nullable = false)
-	private Integer taskNumber;
-	
-	@Column(name = "task_name", nullable = false, length = 255)
-	private String taskName;
-	
-	@Column(name = "task_description", length = 255)
-	private String taskDescription;
-	
-	@Column(name = "task_status", nullable = false)
-	private boolean taskStatus;
 
-	public Task(){}
-	
-	public Task(String taskName, String taskDescription, Integer taskNumber, boolean taskStatus) {
-		this.taskName = taskName;
-		this.taskDescription = taskDescription;
-		this.taskNumber = taskNumber;
-		this.taskStatus = taskStatus;
-	}
-	
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
-	public String getTaskName() {
-		return taskName;
-	}
+    @javax.persistence.Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
-	public void setTaskName(String taskName) {
-		this.taskName = taskName;
-	}
+    @Column(name = "task_number", unique = true, nullable = false)
+    private Integer taskNumber;
 
-	public String getTaskDescription() {
-		return taskDescription;
-	}
+    @Column(name = "task_name", nullable = false)
+    private String taskName;
 
-	public void setTaskDescription(String taskDescription) {
-		this.taskDescription = taskDescription;
-	}
+    @Column(name = "task_description")
+    private String taskDescription;
 
-	public Integer getTaskNumber() {
-		return taskNumber;
-	}
-	public void setTaskNumber(Integer taskNumber) {
-		this.taskNumber = taskNumber;
-	}
+    @Column(name = "task_status", nullable = false)
+    private boolean taskStatus;
 
-	public boolean isTaskStatus() {
-		return taskStatus;
-	}
-
-	public void setTaskStatus(boolean taskStatus) {
-		this.taskStatus = taskStatus;
-	}
+    public Task(String taskName, String taskDescription, Integer taskNumber, boolean taskStatus) {
+        this.taskName = taskName;
+        this.taskDescription = taskDescription;
+        this.taskNumber = taskNumber;
+        this.taskStatus = taskStatus;
+    }
 }
